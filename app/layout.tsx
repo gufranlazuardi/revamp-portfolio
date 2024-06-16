@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} px-5 md:px-10 lg:px-10 xl:px-20 py-10 flex flex-col min-h-screen`}
+        className={`${poppins.className} px-5 md:px-10 lg:px-10 xl:px-20 py-10 flex flex-col min-h-screen max-w-screen-xl mx-auto`}
       >
         <ThemeProvider
           attribute="class"
