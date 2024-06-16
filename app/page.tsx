@@ -50,8 +50,10 @@ const Home = () => {
           </h1>
           <div className="flex flex-col gap-4">
             <h2 className="text-2xl font-thin sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-              I'm <span className="font-bold">Gufran Lazuardi</span>
+              I&apos;m{" "}
+              <span className="font-bold">Gufran Lazuardi</span>
             </h2>
+
             <Role />
             <div className="flex flex-col mt-2">
               <p className="text-[25px]">
@@ -59,7 +61,7 @@ const Home = () => {
               </p>
               <p className="text-[23px] text-slate-400">
                 I focus on building modern web applications using
-                React, Next.js, TypeScript, and Tailwind CSS.
+                React.js, Next.js, and TypeScript
               </p>
             </div>
             <Button className="max-w-60 px-3 bg-blue-500 hover:bg-pink-500 text-white rounded-md  focus:outline-none transition shadow-2xl shadow-blue-500 hover:shadow-pink-600 duration-300 ease-in-out">
