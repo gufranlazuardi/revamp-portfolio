@@ -46,7 +46,7 @@ const CardExperience = () => {
               <p className="text-sm">
                 • I actively contributed to documentation focused on
                 Vue 3, solidifying my knowledge of the framework.
-                Additionally, collaborating on the team's GitHub
+                Additionally, collaborating on the team&apos;s GitHub
                 workflow equipped me with essential skills for
                 seamless version control using Git
               </p>
