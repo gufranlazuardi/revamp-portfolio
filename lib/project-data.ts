@@ -8,7 +8,7 @@ export interface Works {
 export const works: Works[] = [
   {
     project: "hi'SPEC",
-    photo: "hispec-ss.png",
+    photo: "/hispec-ss.png",
     link: "https://github.com/gufranlazuardi/hi-SPEC",
     techstack: ["react", "typescript", "tailwind", "axios"],
   },
@@ -20,7 +20,7 @@ export const works: Works[] = [
   },
   {
     project: "My Pokemon",
-    photo: "my-pokemon-ss.png",
+    photo: "/my-pokemon-ss.png",
     link: "https://github.com/gufranlazuardi/My-Pokemon",
     techstack: ["react", "typescript", "tailwind", "axios"],
   },
