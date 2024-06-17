@@ -1,6 +1,7 @@
 import React from "react";
 import { ScrollArea, ScrollBar } from "./ui/scroll-area";
 import { works } from "@/lib/project-data";
+import Image from "next/image";
 
 const CardProject = () => {
   return (
@@ -14,7 +15,7 @@ const CardProject = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img
+                <Image
                   src={project.photo}
                   alt={`Photo by ${project.photo}`}
                   className="aspect-[6/3] hover:scale-95 hover:filter hover:  transition"
