@@ -6,11 +6,11 @@ export interface Skills {
 export const skills: Skills[] = [
   {
     language: "html",
-    image: "/html-5.png",
+    image: "/html.png",
   },
   {
     language: "css",
-    image: "/css-3.png",
+    image: "/css.png",
   },
   {
     language: "Javascript",
@@ -36,4 +36,12 @@ export const skills: Skills[] = [
     language: "Figma",
     image: "/figma.png",
   },
+  {
+    language: "Tailwind",
+    image: "/tailwind.png"
+  },
+  {
+    language: "Prisma",
+    image: "/prisma.png"
+  }
 ];

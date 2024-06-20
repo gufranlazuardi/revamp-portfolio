@@ -8,14 +8,13 @@ interface CardSkillProps {
 
 const CardSkills: React.FC<CardSkillProps> = ({ skill }) => {
   return (
-    <div className="flex flex-col p-4 gap-2 border rounded-lg items-center hover:bg-slate-600 hover:transition">
+    <div className="flex flex-col bg-blue-950 p-8 gap-2 justify-center border rounded-lg items-center hover:shadow-lg hover:shadow-blue-950 transition-shadow duration-300 transform transition-transform hover:-translate-y-1">
       <Image
         src={skill.image}
         alt={skill.language}
-        width={120}
-        height={120}
+        width={70}
+        height={70}
       />
-      <p>{skill.language}</p>
     </div>
   );
 };
