@@ -22,10 +22,18 @@ const Navbar = () => {
       </Link>
 
       <div className="flex text-[15px] gap-4 items-center">
-        <p>Home</p>
-        <p>Experience</p>
-        <p>Project</p>
-        <p>Contact</p>
+        <Link href="#home">
+          <p className="cursor-pointer">Home</p>
+        </Link>
+        <Link href="#experience">
+          <p className="cursor-pointer">Experience</p>
+        </Link>
+        <Link href="#project">
+          <p className="cursor-pointer">Project</p>
+        </Link>
+        <Link href="contact">
+          <p className="cursor-pointer">Contact</p>
+        </Link>
         <Button
           type="button"
           variant="outline"

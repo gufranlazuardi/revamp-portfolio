@@ -109,3 +109,7 @@
     transform: translateY(-83.33%);
   }
 }
+
+html {
+  scroll-behavior: smooth;
+}

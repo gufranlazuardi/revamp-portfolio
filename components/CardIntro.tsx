@@ -78,9 +78,11 @@ const CardIntro = () => {
           Bonjour <span className="font-bold text-blue-500">.</span>
         </h1>
         <div className="flex flex-col gap-4">
-          <h2 className="text-2xl font-extralight sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             I&apos;m{" "}
-            <span className="font-normal">Gufran Lazuardi</span>
+            <span className="font-extrabold bg-gradient-to-r text-transparent bg-clip-text from-[#0052D4] via-[#4364F7] to-[#1482ff]">
+              Gufran Lazuardi
+            </span>
           </h2>
 
           <Role />
@@ -95,7 +97,7 @@ const CardIntro = () => {
           </div>
           <Button
             onClick={handleDownload}
-            className="max-w-60 px-3 bg-blue-500 hover:bg-pink-500 text-white rounded-md focus:outline-none transition shadow-2xl shadow-blue-500 hover:shadow-pink-600 duration-300 ease-in-out"
+            className="max-w-60 px-3 bg-gradient-to-r from-[#0052D4] via-[#4364F7] to-[#1482ff]  text-white rounded-md focus:outline-none transition-all shadow-2xl shadow-blue-500"
           >
             Download my resume
           </Button>
