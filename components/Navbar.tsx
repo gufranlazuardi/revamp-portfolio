@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
       </Link>
 
-      <div className="flex text-[15px] gap-4 items-center">
+      <div className="flex text-[15px] sm:text-[10px] md:text-[15px] lg:text-[15px] sm:gap-6 md:gap-2 lg:gap-1 xl:gap-4 items-center">
         <Link href="#home">
           <p className="cursor-pointer">Home</p>
         </Link>

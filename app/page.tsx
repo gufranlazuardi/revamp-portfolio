@@ -6,10 +6,12 @@ import CardIntro from "@/components/CardIntro";
 import CardSkills from "@/components/CardSkills";
 import { skills } from "@/lib/skills-data";
 import CardProjectNew from "@/components/CardProjectNew";
+import BlurEffects from "@/components/BlurEffects";
 
 const Home = () => {
   return (
-    <main className="flex flex-col">
+    <main className="flex relative flex-col">
+      <BlurEffects />
       {/* Intro Section */}
       <div id="home" className="flex">
         <CardIntro />
