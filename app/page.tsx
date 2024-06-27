@@ -27,7 +27,7 @@ const Home = () => {
         </h2>
         <div className="flex flex-wrap items-center justify-center gap-2">
           {"123288282".split("").map((i) => (
-            <CardProjectNew />
+            <CardProjectNew key={i} />
           ))}
         </div>
       </div>
