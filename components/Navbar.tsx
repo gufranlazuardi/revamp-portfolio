@@ -1,6 +1,6 @@
 "use client";
 
-import { Moon, Slack, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import React from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
@@ -14,13 +14,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex justify-between">
-      <Link href="/">
-        <div className="cursor-pointer transform-gpu transition-transform hover:scale-110">
-          <Slack size={40} />
-        </div>
-      </Link>
-
+    <div className="flex justify-center items-center justify-between px-[1rem]">
       <div className="flex text-[15px] sm:text-[10px] md:text-[15px] lg:text-[15px] sm:gap-2 md:gap-2 lg:gap-4 xl:gap-4 items-center">
         <Link href="#home">
           <p className="cursor-pointer">Home</p>
@@ -34,6 +28,8 @@ const Navbar = () => {
         <Link href="contact">
           <p className="cursor-pointer">Contact</p>
         </Link>
+      </div>
+
         <Button
           type="button"
           variant="outline"
@@ -45,7 +41,6 @@ const Navbar = () => {
         >
           {theme === "light" ? <Sun size={20} /> : <Moon size={20} />}
         </Button>
-      </div>
     </div>
   );
 };

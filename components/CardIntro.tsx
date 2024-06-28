@@ -74,13 +74,13 @@ const CardIntro = () => {
 
       {/* Main Content */}
       <div className="flex flex-col gap-10 ml-10">
-        <h1 className="text-4xl font-bold sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
-          Bonjour <span className="font-bold text-blue-500">.</span>
+        <h1 className="text-4xl font-normal sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">
+          Bonjour <span className="font-normal text-blue-500">.</span>
         </h1>
         <div className="flex flex-col gap-4">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             I&apos;m{" "}
-            <span className="font-extrabold bg-gradient-to-r text-transparent bg-clip-text from-[#0052D4] via-[#4364F7] to-[#1482ff]">
+            <span className="font-medium bg-gradient-to-r text-transparent bg-clip-text from-[#0052D4] via-[#4364F7] to-[#1482ff]">
               Gufran Lazuardi
             </span>
           </h2>

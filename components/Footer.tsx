@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="flex justify-between items-center mt-[4rem]">
-      <p className="text-sm font-semibold text-slate-400">
+      <p className="text-sm font-normal text-slate-400">
       © 2024 Gufran Lazuardi. All rights reserved
       </p>
       <div className="flex gap-4">

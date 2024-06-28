@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["200"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["200","300", "400","500","600","700","800"] });
 
 export const metadata: Metadata = {
   title: "Gufran Lazuardi",
