@@ -14,7 +14,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex justify-center items-center justify-between px-[1rem]">
+    <div className="flex items-center justify-between px-[1rem]">
       <div className="flex text-slate-500 dark:text-slate-400 text-[15px] sm:text-[10px] md:text-[15px] lg:text-[15px] sm:gap-2 md:gap-4 lg:gap-6 xl:gap-8 items-center">
         <Link href="#home">
           <p className="cursor-pointer">Home</p>
