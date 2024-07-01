@@ -1,22 +1,27 @@
 import React from "react";
 import Image from "next/image";
+import { Works } from "@/lib/project-data";
 
-const CardProjectNew = () => {
+interface ProjectProps {
+  project: Works;
+}
+
+const CardProjectNew: React.FC<ProjectProps> = ({ project }) => {
   return (
     <div className="w-50 flex flex-col h-50 border rounded-md">
       <Image
-        src="/cinemahub-ss.png"
-        alt="cinemahub"
+        src={project.photo}
+        alt={project.project}
         width={350}
         height={200}
         className="p-4"
       />
       <div className="flex justify-between px-4 pb-4">
-        <p>Cinemahub</p>
+        <p>{project.project}</p>
         <div className="flex gap-2">
-          <p>Next.js</p>
-          <p>Typescript</p>
-          <p>Tailwind</p>
+          {project.techstack.map((projects, projectsIndex) => (
+            <p key={projectsIndex}>{projects}</p>
+          ))}
         </div>
       </div>
     </div>

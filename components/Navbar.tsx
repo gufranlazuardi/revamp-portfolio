@@ -19,28 +19,28 @@ const Navbar = () => {
         <Link href="#home">
           <p className="cursor-pointer">Home</p>
         </Link>
-        <Link href="#experience">
-          <p className="cursor-pointer">Experience</p>
-        </Link>
         <Link href="#project">
           <p className="cursor-pointer">Project</p>
         </Link>
-        <Link href="contact">
-          <p className="cursor-pointer">Contact</p>
+        <Link href="#skills">
+          <p className="cursor-pointer">Skills</p>
+        </Link>
+        <Link href="#experience">
+          <p className="cursor-pointer">Experience</p>
         </Link>
       </div>
 
-        <Button
-          type="button"
-          variant="outline"
-          aria-label="change theme"
-          onClick={handleTheme}
-          className={`w-fit h-fit p-2 border-none ${
-            theme === "light" ? "btn-theme" : "btn-theme-dark"
-          }`}
-        >
-          {theme === "light" ? <Sun size={20} /> : <Moon size={20} />}
-        </Button>
+      <Button
+        type="button"
+        variant="outline"
+        aria-label="change theme"
+        onClick={handleTheme}
+        className={`w-fit h-fit p-2 border-none ${
+          theme === "light" ? "btn-theme" : "btn-theme-dark"
+        }`}
+      >
+        {theme === "light" ? <Sun size={20} /> : <Moon size={20} />}
+      </Button>
     </div>
   );
 };

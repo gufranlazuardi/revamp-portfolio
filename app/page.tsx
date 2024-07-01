@@ -7,14 +7,14 @@ import CardSkills from "@/components/CardSkills";
 import { skills } from "@/lib/skills-data";
 import CardProjectNew from "@/components/CardProjectNew";
 import BlurEffects from "@/components/BlurEffects";
+import { works } from "@/lib/project-data";
 
 const Home = () => {
   return (
     <main className="flex relative flex-col">
-
       {/* Blur Effects */}
       <div className="hidden lg:flex xl:flex">
-      <BlurEffects />
+        <BlurEffects />
       </div>
 
       {/* Intro Section */}
@@ -31,25 +31,33 @@ const Home = () => {
           Project
         </h2>
         <h3 className="text-md mx-[1rem]">
-        Explore a selection of my most significant projects. Each project highlights my ability to tackle diverse challenges and create impactful solutions. From dynamic web applications to innovative tools, these projects demonstrate my technical skills, creativity, and dedication to delivering high-quality results.
+          Explore a selection of my most significant projects. Each
+          project highlights my ability to tackle diverse challenges
+          and create impactful solutions. From dynamic web
+          applications to innovative tools, these projects demonstrate
+          my technical skills, creativity, and dedication to
+          delivering high-quality results.
         </h3>
-        <div className="flex flex-wrap items-center justify-center gap-2">
-          {"123288282".split("").map((i) => (
-            <CardProjectNew key={i} />
+        <div className="flex flex-wrap gap-2">
+          {works.map((project, index) => (
+            <CardProjectNew
+              key={project.project + index}
+              project={project}
+            />
           ))}
         </div>
       </div>
 
       {/* Skills Section */}
-      <div
-        id="skills"
-        className="flex flex-col mt-[8rem] gap-4"
-      >
+      <div id="skills" className="flex flex-col mt-[8rem] gap-4">
         <h2 className="text-3xl ml-[1rem] font-bold bg-gradient-to-r text-transparent bg-clip-text from-[#0052D4] via-[#4364F7] to-[#6FB1FC]">
           Skills
         </h2>
         <h3 className="text-md mx-[1rem]">
-        Discover the core technologies and tools that I excel in. From foundational web development skills to advanced frameworks, this section showcases the key proficiencies that enable me to deliver exceptional web experiences
+          Discover the core technologies and tools that I excel in.
+          From foundational web development skills to advanced
+          frameworks, this section showcases the key proficiencies
+          that enable me to deliver exceptional web experiences
         </h3>
         <div className="flex flex-wrap justify-center gap-[2rem]">
           {skills.map((skill, index) => (
@@ -59,10 +67,7 @@ const Home = () => {
       </div>
 
       {/* Experience Section */}
-      <div
-        id="experience"
-        className="flex flex-col gap-4 mt-[8rem]"
-      >
+      <div id="experience" className="flex flex-col gap-4 mt-[8rem]">
         <h2 className="text-3xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-[#0052D4] via-[#4364F7] to-[#6FB1FC]">
           Experience
         </h2>
