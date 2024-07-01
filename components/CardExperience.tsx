@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Separator } from "./ui/separator";
 
 const CardExperience = () => {
@@ -5,24 +6,28 @@ const CardExperience = () => {
     <>
       <div className="flex flex-col gap-8 mt-10">
         <div className="flex flex-col gap-4">
-          <div className="flex flex-col gap-4">
             {/* experience 1 */}
-            <div className="flex justify-between">
+          <div className="flex relative gap-4 w-full rounded-xl border px-8 py-12 border-orange-700 border-4 bg-gradient-to-r from-[#FF7D29] to-[#FF7D29]">
+            <div className="relative w-40"> {/* Adjust the width as needed */}
+              <Image src="/core-initiative.png" layout="fill" objectFit="contain" alt="core-initiative"/>
+            </div>
+            <div className="absolute border rounded-md text-sm top-0 right-0 border bg-slate-800 opacity-80 mr-10 mt-14 px-4 py-3">
+              Frontend Engineer           
+            </div>
+            <div className="flex flex-col">
               <div className="gap-2">
-                <span className="text-xl font-semibold">
+                <span className="text-2xl font-semibold">
                   Core Initiative
                 </span>
-                <span>- {""}</span>
-                <span className="italic">Jakarta, Indonesia</span>
+                <span> - {""}</span>
+                <span className="italic text-md">Jakarta, Indonesia</span>
               </div>
               <div>
                 <p className="text-xs md:text-md lg:text-base xl:text-base">
                   Mar 2024 – Apr 2024
                 </p>
               </div>
-            </div>
-            <p>Frontend Developer - Project Based Internship</p>
-            <div className="flex flex-col gap-2 text-justify">
+            <div className="flex flex-col mt-4 gap-2 text-justify">
               <p className="text-sm">
                 • I worked closely with designers to translate UI
                 mockups into pixel-perfect front-end components. This
@@ -51,16 +56,23 @@ const CardExperience = () => {
                 seamless version control using Git
               </p>
             </div>
+            </div>
+           
           </div>
           <Separator />
 
           {/* experience 2 */}
-          <div className="flex justify-between">
+
+          <div className="flex relative gap-4 w-full rounded-xl border px-8 py-12 border-orange-700 border-4 bg-gradient-to-r from-[#FF7D29] to-[#FF7D29]">
+            <div className="relative w-40"> {/* Adjust the width as needed */}
+              <Image src="/core-initiative.png" layout="fill" objectFit="contain" alt="core-initiative"/>
+            </div>
+          <div className="flex flex-col">
             <div className="gap-2">
               <span className="text-xl font-semibold">
                 Tiket.com {""}
               </span>
-              <span>- {""}</span>
+              <span> - {""}</span>
               <span className="italic">Jakarta, Indonesia</span>
             </div>
             <div>
@@ -69,7 +81,6 @@ const CardExperience = () => {
               </p>
             </div>
           </div>
-          <p>Product Operations</p>
           <div className="flex flex-col gap-2 text-justify">
             <p className="text-sm">
               • Ensuring precise mapping in the system by rectifying
@@ -92,6 +103,7 @@ const CardExperience = () => {
               top hotel prices based on market adjustments, ensuring
               alignment with fixed prices in competitor applications
             </p>
+          </div>
           </div>
         </div>
       </div>
