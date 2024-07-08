@@ -5,10 +5,10 @@ import CardExperience from "@/components/CardExperience";
 import CardIntro from "@/components/CardIntro";
 import CardSkills from "@/components/CardSkills";
 import { skills } from "@/lib/skills-data";
-import CardProjectNew from "@/components/CardProjectNew";
 import BlurEffects from "@/components/BlurEffects";
 import { works } from "@/lib/project-data";
 import { ArrowUpRight } from "lucide-react";
+import CardProject from "@/components/CardProject";
 
 const Home = () => {
   return (
@@ -41,7 +41,7 @@ const Home = () => {
         </h3>
         <div className="flex justify-center flex-wrap gap-2">
           {works.map((project, index) => (
-            <CardProjectNew
+            <CardProject
               key={project.project + index}
               project={project}
             />

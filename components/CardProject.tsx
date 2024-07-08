@@ -6,7 +6,7 @@ interface ProjectProps {
   project: Works;
 }
 
-const CardProjectNew: React.FC<ProjectProps> = ({ project }) => {
+const CardProject: React.FC<ProjectProps> = ({ project }) => {
   return (
     <div className="w-50 justify-center flex flex-col h-50 border rounded-md">
       <Image
@@ -35,4 +35,4 @@ const CardProjectNew: React.FC<ProjectProps> = ({ project }) => {
   );
 };
 
-export default CardProjectNew;
+export default CardProject;
