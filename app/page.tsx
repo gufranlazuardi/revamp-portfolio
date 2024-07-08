@@ -8,13 +8,7 @@ import { skills } from "@/lib/skills-data";
 import CardProjectNew from "@/components/CardProjectNew";
 import BlurEffects from "@/components/BlurEffects";
 import { works } from "@/lib/project-data";
-import {
-  ArrowRightCircle,
-  ArrowRightFromLine,
-  ArrowRightSquare,
-  ArrowRightToLine,
-  ArrowUpRight,
-} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 const Home = () => {
   return (
