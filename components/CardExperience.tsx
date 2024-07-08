@@ -33,7 +33,7 @@ const CardExperience = () => {
                   Mar 2024 – Apr 2024
                 </div>
               </div>
-              <div className="rounded-md flex text-slate-300 text-center wfit text-sm bg-[#8d520e] opacity-80 px-4 py-3">
+              <div className="rounded-md flex text-slate-200 text-center w-fit text-sm bg-[#8d520e] opacity-80 px-4 py-3">
                 Frontend Engineer
               </div>
             </div>
