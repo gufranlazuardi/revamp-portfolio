@@ -8,19 +8,26 @@ interface ProjectProps {
 
 const CardProjectNew: React.FC<ProjectProps> = ({ project }) => {
   return (
-    <div className="w-50 flex flex-col h-50 border rounded-md">
+    <div className="w-50 justify-center flex flex-col h-50 border rounded-md">
       <Image
         src={project.photo}
         alt={project.project}
         width={350}
         height={200}
-        className="p-4"
+        className="p-2"
       />
-      <div className="flex justify-between px-4 pb-4">
-        <p>{project.project}</p>
+      <div className="flex flex-col px-4 pb-4">
+        <p className="dark:text-blue-300 text-blue-500 font-semibold">
+          {project.project}
+        </p>
         <div className="flex gap-2">
           {project.techstack.map((projects, projectsIndex) => (
-            <p key={projectsIndex}>{projects}</p>
+            <p
+              className="dark:text-slate-300 text-slate-700 text-sm"
+              key={projectsIndex}
+            >
+              {projects}
+            </p>
           ))}
         </div>
       </div>

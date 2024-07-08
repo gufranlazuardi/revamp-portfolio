@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between px-[1rem]">
-      <div className="flex text-slate-500 dark:text-slate-400 text-[15px] sm:text-[10px] md:text-[15px] lg:text-[15px] sm:gap-2 md:gap-4 lg:gap-6 xl:gap-8 items-center">
+      <div className="flex text-slate-500 dark:text-slate-400 text-[15px] gap-5 items-center">
         <Link href="#home">
           <p className="cursor-pointer">Home</p>
         </Link>
@@ -30,17 +30,19 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <Button
-        type="button"
-        variant="outline"
-        aria-label="change theme"
-        onClick={handleTheme}
-        className={`w-fit h-fit p-2 border-none ${
-          theme === "light" ? "btn-theme" : "btn-theme-dark"
-        }`}
-      >
-        {theme === "light" ? <Sun size={20} /> : <Moon size={20} />}
-      </Button>
+      <div className="border border-slate-700   rounded-md p-0.5">
+        <Button
+          type="button"
+          variant="outline"
+          aria-label="change theme"
+          onClick={handleTheme}
+          className={`w-fit h-fit p-2 border-none ${
+            theme === "light" ? "btn-theme" : "btn-theme-dark"
+          }`}
+        >
+          {theme === "light" ? <Sun size={20} /> : <Moon size={20} />}
+        </Button>
+      </div>
     </div>
   );
 };

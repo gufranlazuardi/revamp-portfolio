@@ -6,9 +6,9 @@ import { Separator } from "./ui/separator";
 const CardExperience = () => {
   return (
     <>
-      <div className="flex flex-col gap-8 mt-10">
+      <div className="flex flex-col gap-8 mt-10 w-full">
         {/* experience 1 */}
-        <div className="flex gap-12 w-full rounded-xl px-8 py-12 border-[#ff6a00] border-4 bg-gradient-to-r from-[#ff8331] to-[#ff9b54]">
+        <div className="flex flex-col xl:flex-row gap-12 w-full rounded-xl px-8 py-12 border-[#ff6a00] border-4 bg-gradient-to-r from-[#ff8331] to-[#ff9b54]">
           {/* kiri */}
           <div>
             <Image
@@ -33,7 +33,7 @@ const CardExperience = () => {
                   Mar 2024 – Apr 2024
                 </div>
               </div>
-              <div className="rounded-md text-sm bg-[#8d520e] opacity-80 px-4 py-3">
+              <div className="rounded-md flex text-slate-300 text-center wfit text-sm bg-[#8d520e] opacity-80 px-4 py-3">
                 Frontend Engineer
               </div>
             </div>
@@ -85,7 +85,7 @@ const CardExperience = () => {
 
         {/* experience 2 */}
 
-        <div className="flex gap-12 w-full rounded-xl px-8 py-12 border-[#016bff] border-4 bg-gradient-to-r from-[#7ab2ff] to-[#82b6ff]">
+        <div className="flex flex-col xl:flex-row gap-12 w-full rounded-xl px-8 py-12 border-[#016bff] border-4 bg-gradient-to-r from-[#7ab2ff] to-[#82b6ff]">
           {/* kiri */}
           <div>
             <Image
@@ -100,17 +100,17 @@ const CardExperience = () => {
             <div className="flex items-center justify-between">
               <div className="flex flex-col">
                 <p className="text-xl font-bold">
-                  Core Initiative
+                  Tiket.com
                   <span className="text-sm font-normal"> - </span>
                   <span className="font-light text-sm">
                     Jakarta, Indonesia
                   </span>
                 </p>
                 <div className="text-xs md:text-md lg:text-base xl:text-base">
-                  Mar 2024 – Apr 2024
+                  Oct 2024 – Jan 2024
                 </div>
               </div>
-              <div className="rounded-md text-sm bg-[#264a7e] opacity-80 px-4 py-3">
+              <div className="rounded-md w-fit text-slate-300 flex text-center text-sm bg-[#264a7e] opacity-80 px-4 py-3">
                 Product Operations
               </div>
             </div>
