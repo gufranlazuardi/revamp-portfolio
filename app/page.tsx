@@ -5,12 +5,16 @@ import CardExperience from "@/components/CardExperience";
 import CardProject from "@/components/CardProject";
 import BlurEffects from "@/components/BlurEffects";
 import CardSkills from "@/components/CardSkills";
-import CardIntro from "@/components/CardIntro";
 import { skills } from "@/lib/skills-data";
 import { works } from "@/lib/project-data";
 import { ArrowUpRight } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import dynamic from "next/dynamic";
+
+const CardIntro = dynamic(() => import("@/components/CardIntro"), {
+  ssr: false,
+});
 
 const Home = () => {
   useEffect(() => {
@@ -94,7 +98,7 @@ const Home = () => {
       <div
         id="experience"
         className="flex flex-col gap-4 pt-[4rem] mt-[4rem]"
-        data-aos="fade-right"
+        data-aos="fade-left"
       >
         <h2 className="text-3xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-[#0052D4] via-[#4364F7] to-[#6FB1FC]">
           Experience
