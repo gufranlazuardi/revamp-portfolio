@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Role from "@/components/Role";
 import { Button } from "@/components/ui/button";
@@ -38,7 +40,10 @@ const CardIntro = () => {
   };
 
   return (
-    <div className="flex pt-16 sm:px-5 md:px-1 lg:px-3 xl:px-23">
+    <div
+      className="flex pt-16 sm:px-5 md:px-1 lg:px-3 xl:px-23"
+      data-aos="fade-left"
+    >
       {/* Sidebar */}
       <div className="flex flex-col gap-8 items-center">
         <Separator
@@ -97,7 +102,7 @@ const CardIntro = () => {
           </div>
           <Button
             onClick={handleDownload}
-            className="max-w-60 px-3 bg-gradient-to-r from-[#0052D4] via-[#4364F7] to-[#1482ff]  text-white rounded-md focus:outline-none transition-all shadow-2xl shadow-blue-500"
+            className="max-w-60 px-3 bg-gradient-to-r from-[#0052D4] via-[#4364F7] to-[#1482ff] text-white rounded-md focus:outline-none transition-all shadow-2xl shadow-blue-500"
           >
             Download my resume
           </Button>
