@@ -5,8 +5,12 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
+import Head from "next/head";
 
-const poppins = Poppins({ subsets: ["latin"], weight: ["200","300", "400","500","600","700","800"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+});
 
 export const metadata: Metadata = {
   title: "Gufran Lazuardi",
@@ -20,6 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <title>{metadata.title?.toString()}</title>
+        <meta
+          name="Gufran Lazuardi"
+          content={metadata.description?.toString()}
+        />
+        <link rel="icon" href="/owl.png" />
+      </Head>
       <body
         className={`${poppins.className} px-5 md:px-10 lg:px-10 xl:px-20 py-10 flex flex-col min-h-screen max-w-screen-xl mx-auto`}
       >
