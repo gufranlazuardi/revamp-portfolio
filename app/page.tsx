@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import CardExperience from "@/components/CardExperience";
-import CardProject from "@/components/CardProject";
+// import CardProject from "@/components/CardProject";
 import BlurEffects from "@/components/BlurEffects";
 import CardSkills from "@/components/CardSkills";
 import { skills } from "@/lib/skills-data";
@@ -15,6 +15,13 @@ import dynamic from "next/dynamic";
 const CardIntro = dynamic(() => import("@/components/CardIntro"), {
   ssr: false,
 });
+
+const CardProject = dynamic(
+  () => import("@/components/CardProject"),
+  {
+    ssr: false,
+  }
+);
 
 const Home = () => {
   useEffect(() => {
