@@ -42,7 +42,7 @@ const Home = () => {
       </div>
 
       {/* Intro Section */}
-      <div id="home" className="flex" data-aos="fade-left">
+      <div id="home" className="flex" data-aos="fade-up">
         <CardIntro />
       </div>
 
@@ -50,7 +50,7 @@ const Home = () => {
       <div
         id="project"
         className="flex flex-col w-fit pt-[4rem] mt-[4rem] gap-4"
-        data-aos="fade-left"
+        data-aos="fade-up"
       >
         <h2 className="text-3xl ml-[1rem] font-bold bg-gradient-to-r text-transparent bg-clip-text from-[#0052D4] via-[#4364F7] to-[#6FB1FC]">
           Project
@@ -83,7 +83,7 @@ const Home = () => {
       <div
         id="skills"
         className="flex flex-col pt-[4rem] mt-[4rem] gap-4"
-        data-aos="fade-left"
+        data-aos="fade-up"
       >
         <h2 className="text-3xl ml-[1rem] font-bold bg-gradient-to-r text-transparent bg-clip-text from-[#0052D4] via-[#4364F7] to-[#6FB1FC]">
           Skills
@@ -105,7 +105,7 @@ const Home = () => {
       <div
         id="experience"
         className="flex flex-col gap-4 pt-[4rem] mt-[4rem]"
-        data-aos="fade-left"
+        data-aos="fade-up"
       >
         <h2 className="text-3xl font-bold bg-gradient-to-r text-transparent bg-clip-text from-[#0052D4] via-[#4364F7] to-[#6FB1FC]">
           Experience
