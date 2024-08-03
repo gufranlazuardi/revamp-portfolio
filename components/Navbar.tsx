@@ -2,12 +2,14 @@
 
 import { Moon, Sun } from "lucide-react";
 import React from "react";
-import Link from "next/link";
 import { useTheme } from "next-themes";
 import { Button } from "./ui/button";
+import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const { theme, setTheme } = useTheme();
+
   function handleTheme() {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
@@ -15,20 +17,15 @@ const Navbar = () => {
 
   return (
     <div className="flex items-center justify-between px-[1rem]">
-      <div className="flex text-slate-500 dark:text-slate-400 text-[15px] gap-5 items-center">
-        <Link href="#home">
-          <p className="cursor-pointer">Home</p>
-        </Link>
-        <Link href="#project">
-          <p className="cursor-pointer">Project</p>
-        </Link>
-        <Link href="#skills">
-          <p className="cursor-pointer">Skills</p>
-        </Link>
-        <Link href="#experience">
-          <p className="cursor-pointer">Experience</p>
-        </Link>
-      </div>
+      <Link href="/">
+        <Image
+          src="/science_color.png"
+          alt="home-navbar"
+          height={100}
+          width={50}
+          className="hover:scale-125 transition-all"
+        />
+      </Link>
 
       <div className="border border-slate-700   rounded-md p-0.5">
         <Button
