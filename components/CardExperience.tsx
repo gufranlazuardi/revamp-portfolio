@@ -7,6 +7,81 @@ const CardExperience = () => {
   return (
     <>
       <div className="flex flex-col gap-8 mt-10 w-full">
+        <div className="flex flex-col xl:flex-row gap-12 w-full rounded-xl px-8 py-12 border-[#ff6a00] border-4 bg-gradient-to-r from-[#ff8331] to-[#ff9b54]">
+          {/* kiri */}
+          <div>
+            <Image
+              src="/core-initiative.png"
+              width={100}
+              height={100}
+              alt="core-initiative"
+            />
+          </div>
+          {/* kanan */}
+          <div className="flex flex-col w-full">
+            <div className="flex items-start justify-between">
+              <div className="flex flex-col">
+                <p className="text-xl font-bold">
+                  Core Initiative
+                  <span className="text-sm font-normal"> - </span>
+                  <span className="font-light text-sm">
+                    Jakarta, Indonesia
+                  </span>
+                </p>
+                <div className="text-xs md:text-md lg:text-base xl:text-base">
+                  Mar 2024 – Apr 2024
+                </div>
+              </div>
+              <div className="rounded-md flex text-slate-200 text-center w-fit text-sm bg-[#8d520e] opacity-80 px-4 py-3">
+                Frontend Engineer
+              </div>
+            </div>
+            <div className="flex flex-col mt-8 gap-2 text-justify">
+              <div className="flex items-baseline gap-2">
+                <p>•</p>
+                <p className="text-sm">
+                  I worked closely with designers to translate UI
+                  mockups into pixel-perfect front-end components.
+                  This involved slicing elements from design assets
+                  and building them using a Vue. Focusing on clean and
+                  reusable code helped me understand the importance of
+                  maintainability in long-term projects
+                </p>
+              </div>
+              <div className="flex items-baseline gap-2">
+                <p>•</p>
+                <p className="text-sm">
+                  My focus on quality extended beyond implementation.
+                  I actively participated in writing unit tests for my
+                  components using Jest. This not only ensured the
+                  reliability of my code but also instilled a strong
+                  commitment to quality within me
+                </p>
+              </div>
+              <div className="flex items-baseline gap-2">
+                <p>•</p>
+                <p className="text-sm">
+                  I played a crucial role in integrating these APIs
+                  within my front-end components, ensuring smooth data
+                  retrieval and manipulation
+                </p>
+              </div>
+              <div className="flex items-baseline gap-2">
+                <p>•</p>
+                <p className="text-sm">
+                  I actively contributed to documentation focused on
+                  Vue 3, solidifying my knowledge of the framework.
+                  Additionally, collaborating on the team&apos;s
+                  GitHub workflow equipped me with essential skills
+                  for seamless version control using Git
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <Separator />
+
         {/* experience 1 */}
         <div className="flex flex-col xl:flex-row gap-12 w-full rounded-xl px-8 py-12 border-[#ff6a00] border-4 bg-gradient-to-r from-[#ff8331] to-[#ff9b54]">
           {/* kiri */}
