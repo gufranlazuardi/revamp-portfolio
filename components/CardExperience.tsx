@@ -7,11 +7,11 @@ const CardExperience = () => {
   return (
     <>
       <div className="flex flex-col gap-8 mt-10 w-full">
-        <div className="flex flex-col xl:flex-row gap-12 w-full rounded-xl px-8 py-12 border-[#ff6a00] border-4 bg-gradient-to-r from-[#ff8331] to-[#ff9b54]">
+        <div className="flex flex-col xl:flex-row gap-12 w-full rounded-xl px-8 py-12 border-[#6f6f6f] border-4 bg-gradient-to-r from-[#cacaca] to-[#d4d4d4] text-black">
           {/* kiri */}
           <div>
             <Image
-              src="/core-initiative.png"
+              src="/Creative_Indigo_Production_Logo.png"
               width={100}
               height={100}
               alt="core-initiative"
@@ -22,18 +22,18 @@ const CardExperience = () => {
             <div className="flex items-start justify-between">
               <div className="flex flex-col">
                 <p className="text-xl font-bold">
-                  Core Initiative
+                  Creative Indigo Production
                   <span className="text-sm font-normal"> - </span>
                   <span className="font-light text-sm">
                     Jakarta, Indonesia
                   </span>
                 </p>
                 <div className="text-xs md:text-md lg:text-base xl:text-base">
-                  Mar 2024 – Apr 2024
+                  August 2024 – Now
                 </div>
               </div>
-              <div className="rounded-md flex text-slate-200 text-center w-fit text-sm bg-[#8d520e] opacity-80 px-4 py-3">
-                Frontend Engineer
+              <div className="rounded-md flex text-slate-black text-center w-fit text-sm bg-slate-400 opacity-80 px-4 py-3">
+                Frontend Developer
               </div>
             </div>
             <div className="flex flex-col mt-8 gap-2 text-justify">
