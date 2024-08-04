@@ -63,8 +63,8 @@ const CardExperience = () => {
                 <p>•</p>
                 <p className="text-sm">
                   Contributed significantly to project documentation,
-                  enhancing the team's understanding of the project's
-                  architecture and functionality
+                  enhancing the team&apos;s understanding of the
+                  project&apos;s architecture and functionality
                 </p>
               </div>
             </div>
