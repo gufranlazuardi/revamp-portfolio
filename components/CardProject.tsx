@@ -12,7 +12,7 @@ interface ProjectProps {
 const CardProject: React.FC<ProjectProps> = ({ project }) => {
   return (
     <Link href={`/project-detail/${project.id}`}>
-      <div className="w-50 justify-center flex flex-col h-50 border rounded-md">
+      <div className="w-50 justify-center flex flex-col h-45 border rounded-md">
         <Image
           src={project.photo}
           alt={project.project}

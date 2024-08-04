@@ -11,6 +11,7 @@ import { ArrowUpRight } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const CardIntro = dynamic(() => import("@/components/CardIntro"), {
   ssr: false,
@@ -49,7 +50,7 @@ const Home = () => {
       {/* Project Section */}
       <div
         id="project"
-        className="flex flex-col w-fit pt-[4rem] mt-[4rem] gap-4"
+        className="flex flex-col pt-[4rem] mt-[4rem] gap-4"
         data-aos="fade-up"
       >
         <h2 className="text-3xl ml-[1rem] font-bold bg-gradient-to-r text-transparent bg-clip-text from-[#0052D4] via-[#4364F7] to-[#6FB1FC]">
@@ -70,12 +71,21 @@ const Home = () => {
               project={project}
             />
           ))}
-          <div className="flex gap-2 flex-col items-center justify-center w-[22rem] h-auto border rounded-md">
-            <p className="dark:text-slate-300 text-slate-700 text-sm">
-              Explore more on my github
-            </p>
-            <ArrowUpRight size={20} />
-          </div>
+
+          {/* Jump to my github section (open new tab) */}
+          <Link
+            href="https://github.com/gufranlazuardi"
+            passHref
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="flex gap-2 flex-col items-center justify-center w-[22rem] h-[240px] border rounded-md">
+              <p className="dark:text-slate-300 text-slate-700 text-sm">
+                Explore more on my github
+              </p>
+              <ArrowUpRight size={20} />
+            </div>
+          </Link>
         </div>
       </div>
 

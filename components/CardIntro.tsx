@@ -40,10 +40,7 @@ const CardIntro = () => {
   };
 
   return (
-    <div
-      className="flex pt-16 sm:px-5 md:px-1 lg:px-3 xl:px-23"
-      data-aos="fade-left"
-    >
+    <div className="flex pt-16 sm:px-5 md:px-1 lg:px-3 xl:px-23">
       {/* Sidebar */}
       <div className="flex flex-col gap-8 items-center">
         <Separator
