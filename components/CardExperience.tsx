@@ -40,40 +40,31 @@ const CardExperience = () => {
               <div className="flex items-baseline gap-2">
                 <p>•</p>
                 <p className="text-sm">
-                  I worked closely with designers to translate UI
-                  mockups into pixel-perfect front-end components.
-                  This involved slicing elements from design assets
-                  and building them using a Vue. Focusing on clean and
-                  reusable code helped me understand the importance of
-                  maintainability in long-term projects
+                  Sliced company profile from HTML to Next.js 14,
+                  ensuring a seamless and responsive design
                 </p>
               </div>
               <div className="flex items-baseline gap-2">
                 <p>•</p>
                 <p className="text-sm">
-                  My focus on quality extended beyond implementation.
-                  I actively participated in writing unit tests for my
-                  components using Jest. This not only ensured the
-                  reliability of my code but also instilled a strong
-                  commitment to quality within me
+                  Upgraded cumicumi.com from Next.js 12 to Next.js 14
+                  with TypeScript, enhancing performance and
+                  maintainability
                 </p>
               </div>
               <div className="flex items-baseline gap-2">
                 <p>•</p>
                 <p className="text-sm">
-                  I played a crucial role in integrating these APIs
-                  within my front-end components, ensuring smooth data
-                  retrieval and manipulation
+                  Fixed various bugs to ensure a smooth and error-free
+                  user experience
                 </p>
               </div>
               <div className="flex items-baseline gap-2">
                 <p>•</p>
                 <p className="text-sm">
-                  I actively contributed to documentation focused on
-                  Vue 3, solidifying my knowledge of the framework.
-                  Additionally, collaborating on the team&apos;s
-                  GitHub workflow equipped me with essential skills
-                  for seamless version control using Git
+                  Contributed significantly to project documentation,
+                  enhancing the team's understanding of the project's
+                  architecture and functionality
                 </p>
               </div>
             </div>

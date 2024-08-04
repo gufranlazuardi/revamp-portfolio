@@ -14,7 +14,7 @@ const CardIntro = () => {
   const { toast } = useToast();
 
   const handleDownload = () => {
-    const resumeUrl = "/gufran-lazuardi-resume-ats.pdf";
+    const resumeUrl = "/gufran-lazuardi-resume-ats-revamp.pdf";
 
     try {
       const link = document.createElement("a");
