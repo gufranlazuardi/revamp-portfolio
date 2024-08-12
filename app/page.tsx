@@ -1,17 +1,17 @@
 "use client";
 
-import React, { useEffect } from "react";
-import CardExperience from "@/components/CardExperience";
-// import CardProject from "@/components/CardProject";
-import BlurEffects from "@/components/BlurEffects";
-import CardSkills from "@/components/CardSkills";
-import { skills } from "@/lib/skills-data";
-import { works } from "@/lib/project-data";
+import React, { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import dynamic from "next/dynamic";
-import Link from "next/link";
+import BlurEffects from "@/components/BlurEffects";
+import CardSkills from "@/components/CardSkills";
+import CardExperience from "@/components/CardExperience";
+import HomeSkeleton from "@/components/HomeSkeleton";
+import { skills } from "@/lib/skills-data";
+import { works } from "@/lib/project-data";
 
 const CardIntro = dynamic(() => import("@/components/CardIntro"), {
   ssr: false,
@@ -25,15 +25,25 @@ const CardProject = dynamic(
 );
 
 const Home = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animation duration in milliseconds
-      once: false, // Whether animation should happen only once
+      duration: 1000,
+      once: false,
     });
 
-    // Refresh AOS after component mounts
     AOS.refresh();
+    setIsLoading(false);
   }, []);
+
+  if (isLoading) {
+    return (
+      <div className="flex flex-col">
+        <HomeSkeleton />
+      </div>
+    );
+  }
 
   return (
     <main className="flex relative flex-col">
@@ -66,10 +76,7 @@ const Home = () => {
         </h3>
         <div className="flex justify-center flex-wrap gap-2">
           {works.map((project, index) => (
-            <CardProject
-              key={project.project + index}
-              project={project}
-            />
+            <CardProject key={index} project={project} />
           ))}
 
           {/* Jump to my github section (open new tab) */}
@@ -102,7 +109,7 @@ const Home = () => {
           Discover the core technologies and tools that I excel in.
           From foundational web development skills to advanced
           frameworks, this section showcases the key proficiencies
-          that enable me to deliver exceptional web experiences
+          that enable me to deliver exceptional web experiences.
         </h3>
         <div className="flex flex-wrap justify-center gap-[2rem]">
           {skills.map((skill, index) => (
