@@ -3,7 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/provider/theme-provider";
 import { Toaster } from "@/components/ui/toaster";
 import Head from "next/head";
 
@@ -39,7 +39,6 @@ export default function RootLayout({
           attribute="class"
           defaultTheme="system"
           enableSystem
-          disableTransitionOnChange
         >
           <Navbar />
           <main className="flex-grow">{children}</main>
