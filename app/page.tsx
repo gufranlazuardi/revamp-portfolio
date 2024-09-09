@@ -86,7 +86,7 @@ const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex gap-2 flex-col items-center justify-center w-[22rem] h-[240px] border rounded-md">
+            <div className="flex gap-2 flex-col items-center justify-center w-[22rem] h-[248px] border rounded-md">
               <p className="dark:text-slate-300 text-slate-700 text-sm">
                 Explore more on my github
               </p>
