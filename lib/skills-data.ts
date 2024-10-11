@@ -38,10 +38,18 @@ export const skills: Skills[] = [
   },
   {
     language: "Tailwind",
-    image: "/tailwind.png"
+    image: "/tailwind.png",
   },
   {
     language: "Prisma",
-    image: "/prisma.png"
-  }
+    image: "/prisma.png",
+  },
+  {
+    language: "Golang",
+    image: "/golang.png",
+  },
+  {
+    language: "Postgres",
+    image: "/postgres.png",
+  },
 ];

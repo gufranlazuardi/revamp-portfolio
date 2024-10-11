@@ -18,13 +18,15 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between px-[1rem]">
       <Link href="/">
-        <Image
-          src="/science_color.png"
-          alt="home-navbar"
-          height={100}
-          width={50}
-          className="hover:scale-125 transition-all"
-        />
+        <div className="w-10 h-10">
+          <Image
+            src="/science_color.png"
+            alt="home-navbar"
+            height={100}
+            width={100}
+            className="hover:scale-125 transition-all"
+          />
+        </div>
       </Link>
 
       <div className="border border-slate-700   rounded-md p-0.5">

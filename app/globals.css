@@ -114,3 +114,17 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* blur image */
+.image-container {
+  overflow: hidden; /* Ensures no overflow during loading */
+}
+
+.lazy-image {
+  transition: filter 0.3s ease; /* Smooth transition for the blur */
+  filter: blur(10px); /* Blur effect while loading */
+}
+
+.lazy-image.loaded {
+  filter: blur(0); /* Remove blur once loaded */
+}

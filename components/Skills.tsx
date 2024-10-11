@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CardSkills from "./CardSkills";
 import { skills } from "@/lib/skills-data";
+import AOS from "aos";
 
 const Skills = () => {
+  useEffect(() => {
+    AOS.init({ duration: 600, offset: 100 });
+  }, []);
+
   return (
     <>
       <div className="flex flex-col pt-[4rem] mt-[4rem] gap-4">
@@ -17,7 +22,9 @@ const Skills = () => {
         </h3>
         <div className="flex flex-wrap justify-center gap-[2rem]">
           {skills.map((skill, index) => (
-            <CardSkills key={index} skill={skill} />
+            <div data-aos="fade-up" data-aos-delay={index * 100}>
+              <CardSkills key={index} skill={skill} />
+            </div>
           ))}
         </div>
       </div>

@@ -3,14 +3,9 @@
 import React, { useEffect, useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { ArrowUpRight } from "lucide-react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import BlurEffects from "@/components/BlurEffects";
-import CardSkills from "@/components/CardSkills";
-import CardExperience from "@/components/CardExperience";
-import { skills } from "@/lib/skills-data";
-import { works } from "@/lib/project-data";
 import Project from "@/components/Project";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
@@ -18,13 +13,6 @@ import Experience from "@/components/Experience";
 const CardIntro = dynamic(() => import("@/components/CardIntro"), {
   ssr: false,
 });
-
-const CardProject = dynamic(
-  () => import("@/components/CardProject"),
-  {
-    ssr: false,
-  }
-);
 
 const Home = () => {
   useEffect(() => {
