@@ -13,9 +13,66 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Gufran Lazuardi",
-  description: "Gufran Lazuardi's Portfolio",
+  title: "Gufran Lazuardi | Software Engineer",
+  description:
+    "Explore the journey of Gufran Lazuardi, a passionate Frontend Developer evolving into a Fullstack Developer. Discover projects that showcase my skills in crafting dynamic user interfaces and my commitment to mastering backend technologies for comprehensive web solutions.",
+  keywords:
+    "Gufran, Lazuardi, Frontend Developer, Fullstack Developer, Software Engineer",
+  authors: [
+    {
+      name: "Gufran Lazuardi",
+      url: "https://gufranlazuardi.vercel.app",
+    },
+  ],
+  openGraph: {
+    title: "Gufran Lazuardi | Software Engineer",
+    description:
+      "Explore the journey of Gufran Lazuardi, a passionate Frontend Developer evolving into a Fullstack Developer. Discover projects that showcase my skills in crafting dynamic user interfaces and my commitment to mastering backend technologies for comprehensive web solutions.",
+    url: "https://gufranlazuardi.com",
+    images: [
+      {
+        url: "/owl.png",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@gufranlazuardi",
+    title: "Gufran Lazuardi | Software Engineer",
+    description:
+      "Explore the journey of Gufran Lazuardi, a passionate Frontend Developer evolving into a Fullstack Developer.",
+    images: [
+      {
+        url: "/owl.png",
+      },
+    ],
+  },
 };
+
+const metaTags = [
+  { name: "description", content: metadata.description },
+  { name: "keywords", content: metadata.keywords },
+  {
+    name: "author",
+    content:
+      Array.isArray(metadata.authors) && metadata.authors.length > 0
+        ? metadata.authors[0].name
+        : "",
+  },
+  { property: "og:title", content: metadata.openGraph?.title ?? "" },
+  {
+    property: "og:description",
+    content: metadata.openGraph?.description ?? "",
+  },
+  { property: "og:url", content: metadata.openGraph?.url ?? "" },
+  { name: "twitter:site", content: metadata.twitter?.site ?? "" },
+  { name: "twitter:title", content: metadata.twitter?.title ?? "" },
+  {
+    name: "twitter:description",
+    content: metadata.twitter?.description ?? "",
+  },
+];
 
 export default function RootLayout({
   children,
@@ -25,11 +82,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <title>{metadata.title?.toString()}</title>
-        <meta
-          name="Gufran Lazuardi"
-          content={metadata.description?.toString()}
-        />
+        <title>{String(metadata.title ?? "Default Title")}</title>
+        {metaTags.map((tag, index) => (
+          <meta
+            key={index}
+            {...tag}
+            content={String(tag.content ?? "")}
+          />
+        ))}
         <link rel="icon" href="/owl.png" />
       </Head>
       <body
