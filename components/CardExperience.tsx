@@ -24,9 +24,9 @@ const CardExperience = () => {
                 <div className="flex-col md:flex-row lg:flex-row xl:flex-row">
                   <p className="text-xl font-bold">
                     Creative Indigo Production
-                    <p className="font-light text-sm">
-                      Jakarta, Indonesia
-                    </p>
+                  </p>
+                  <p className="font-light text-sm">
+                    Jakarta, Indonesia
                   </p>
                 </div>
                 <div className="text-xs md:text-md lg:text-base xl:text-base">
