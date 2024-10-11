@@ -90,7 +90,7 @@ export default function RootLayout({
             content={String(tag.content ?? "")}
           />
         ))}
-        <link rel="icon" href="/owl.png" />
+        <link rel="icon" href="/owl.ico" />
       </Head>
       <body
         className={`${poppins.className} px-5 md:px-10 lg:px-10 xl:px-20 py-10 flex flex-col min-h-screen max-w-screen-xl mx-auto`}
