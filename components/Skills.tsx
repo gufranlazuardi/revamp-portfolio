@@ -22,7 +22,11 @@ const Skills = () => {
         </h3>
         <div className="flex flex-wrap justify-center gap-[2rem]">
           {skills.map((skill, index) => (
-            <div data-aos="fade-up" data-aos-delay={index * 100}>
+            <div
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+              key={index}
+            >
               <CardSkills key={index} skill={skill} />
             </div>
           ))}
