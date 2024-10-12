@@ -20,7 +20,7 @@ const Skills = () => {
           frameworks, this section showcases the key proficiencies
           that enable me to deliver exceptional web experiences.
         </h3>
-        <div className="flex flex-wrap justify-center gap-[2rem]">
+        <div className="flex flex-wrap justify-center gap-[2rem] mt-[2rem]">
           {skills.map((skill, index) => (
             <div
               data-aos="fade-up"

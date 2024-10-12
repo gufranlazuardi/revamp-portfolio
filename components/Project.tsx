@@ -42,7 +42,7 @@ const Project = () => {
           my technical skills, creativity, and dedication to
           delivering high-quality results.
         </h3>
-        <div className="flex justify-center flex-wrap gap-2">
+        <div className="flex justify-center flex-wrap gap-2 mt-[2rem]">
           {works.map((project, index) => (
             <div
               data-aos="fade-up"
@@ -60,8 +60,8 @@ const Project = () => {
           >
             <div
               data-aos="fade-up"
-              data-aos-delay={works.length * 100 + 100} // Delay based on the number of projects
-              className="flex gap-2 flex-col items-center justify-center w-[20rem] h-[248px] border rounded-md shadow-lg dark:shadow-slate-800"
+              data-aos-delay={works.length * 100 + 100}
+              className="flex flex-col items-center justify-center gap-2 w-[20rem] h-[248px] border rounded-md shadow-lg dark:shadow-slate-800"
             >
               <p className="dark:text-slate-300 text-slate-700 text-sm">
                 Explore more on my GitHub
